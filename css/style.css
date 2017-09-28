@@ -481,7 +481,7 @@ textarea {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
 }
 .menu__btn {
   display: none;
@@ -565,31 +565,15 @@ textarea {
   color: #303536;
   font-size: 30px;
   font-weight: 700;
-  padding-top: 80px;
-  position: relative;
   letter-spacing: 1px;
+  text-align: center;
 }
 .benefits__item span {
   color: #50cb70;
 }
-.benefits__item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 64px;
-  height: 64px;
-  background-repeat: no-repeat;
-}
-.benefits__item:first-child::before {
-  background-image: url(../img/icon-coins.png);
-}
-.benefits__item:nth-child(2)::before {
-  background-image: url(../img/icon-clock.png);
-}
-.benefits__item:nth-child(3)::before {
-  background-image: url(../img/icon-chain.png);
+.benefits__item p {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .benefits__text {
   text-align: center;

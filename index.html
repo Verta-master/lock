@@ -10,7 +10,7 @@
 <body>
   <header class="header">
     <div class="header__wrap">
-      <nav class="menu">
+      <nav class="menu menu--closed">
         <div class="logo">
           <img src="img/logo.png" alt="Logo" class="logo__pic" width="231" height="103">
         </div>
@@ -44,9 +44,18 @@
     <section class="benefits">
       <h3 class="title-h3">Три причины выбрать именно нас</h3>
       <ul class="benefits__list">
-        <li class="benefits__item">От <span>400</span> руб</li>
-        <li class="benefits__item">До <span>30</span> мин</li>
-        <li class="benefits__item">Без <span>урона</span> замку</li>
+        <li class="benefits__item">
+          <img src="img/icon-coins.png" alt="Три причины" class="benefits__img" width="64" height="64">
+          <p>От <span>400</span> руб</p>
+        </li>
+        <li class="benefits__item">
+          <img src="img/icon-clock.png" alt="Три причины" class="benefits__img" width="64" height="64">
+          <p>До <span>30</span> мин</p>
+        </li>
+        <li class="benefits__item">
+          <img src="img/icon-chain.png" alt="Три причины" class="benefits__img" width="64" height="64">
+          <p>Без <span>урона</span> замку</p>
+        </li>
       </ul>
       
       <ul class="service">
@@ -123,7 +132,10 @@
     </div>
   </footer>
 
-<!--  <script src="js/script.js"></script>-->
+<!-- Menu -->
+  <script src="js/script.js"></script>
+  
+<!-- Map -->
   <script>
     function initMap() {
     var latlng = new google.maps.LatLng("55.749491", "37.594463");
