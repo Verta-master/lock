@@ -70,4 +70,191 @@
     padding: 0 10px;
   }
   
+  .logo__pic {
+    width: 150px;
+    height: auto;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+  }
+  
+  .header__wrap {
+    padding: 0;
+  }
+  
+  .header {
+    padding-bottom: 150px;
+  }
+  
+  .menu {
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  .menu--closed {
+    .menu__list {
+      display: none;
+    }
+    
+    .menu__btn {
+      background-image: url(../img/icon-menu-ham.svg);
+    }
+  }
+  
+  .menu--opened {
+    margin-bottom: 250px;
+    
+    .menu__btn {
+      background-image: url(../img/icon-menu-cross.svg);
+    }
+    
+    .menu__list {
+      position: absolute;
+      top: 97px;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      z-index: 5;
+    }
+    
+    .menu__item {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    .menu__link {
+      width: 100%;
+      line-height: 60px;
+    }
+  }
+}
+
+//------------------------
+@media @mobile {
+  .title-h1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 40px;
+    
+    &::after {
+      width: 500px;
+    }
+  }
+  
+  .benefits__item,
+  .header__link,
+  .header__text,
+  .title-h2,
+  .title-h3 {
+    font-size: 24px;
+  }
+  
+  .header__phones {
+    width: 500px;
+  }
+  
+  .benefits__item p {
+    font-size: 20px;
+  }
+  
+  .service__text {
+    font-size: 10px;
+  }
+  
+  .service__title {
+    text-align: center;
+  }
+  
+  .service__text {
+    font-size: 9px;
+  }
+  
+  .footer__item:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer__link:nth-child(2) {
+    margin-left: 0;
+  }
+  
+  .footer {
+    padding-top: 0;
+  }
+}
+
+//---------------------------
+@media @mobile-2 {
+  .footer__block,
+  .service__item,
+  .title-h1::after {
+    width: 100%;
+  }
+  
+  .header__phones {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-h3 {
+    font-size: 20px;
+  }
+  
+  .footer__wrap,
+  .service,
+  .benefits__list {
+    flex-direction: column;
+    align-items: center
+  }
+  
+  .benefits__item {
+    margin-bottom: 40px;
+  }
+  
+  .footer__contacts {
+    margin-top: 25px;
+  }
+  
+  .footer__copyright {
+    font-size: 12px;
+  }
+  
+  .menu--closed {
+    margin-bottom: 80px;
+  }
+  
+  .header {
+    padding-bottom: 100px;
+  }
+  
+  .service,
+  .benefits__list {
+    margin-bottom: 50px;
+  }
+  
+  .benefits {
+    padding-bottom: 50px;
+  }
+
+  .footer__title {
+    font-size: 18px;
+  }
 }
